@@ -5,50 +5,71 @@
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
+    <script src="./look-controls.js"></script>
     
   </head>
   <body>
     <a-scene mindar-image="imageTargetSrc: ./targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      
+      <!-- Assets -->
       <a-assets>
         <img id="card" src=card.JPG />
         <a-asset-item id= "avatarModel" src=Cube.gltf ></a-asset-item>
+        <video id="intro" autoplay loop="true" src="IMG_0977.MOV"></video>
       </a-assets>
 
       <!--- Camera Component -->
-      <a-camera position="0 0 0" look-controls="enabled: true">
+      <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
-        <a-entity cursor="fuse: true; fuseTimeout: 500"
-            position="0 0 -1"
-            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-            material="color: black; shader: flat">
-        </a-entity>
-
+        
+        <!-- ** NEED TO SOLVE CURSOR PROBLEM **-->
+        <a-cursor fuse="false" fuseTimeout="1000" position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.04; radiusOuter: 0.05"
+            material="color: black; shader: flat"/> 
+        
+        
       </a-camera>
 
       <!-- Place on Target when found-->
       <a-entity mindar-image-target="targetIndex: 0">
+
         <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+
+        <a-video src="#intro" width="1.5" height=".75" position="0 .6 .3" rotation="130  180 180" ></a-video>
+
+        
         
         <!-- Cylidners -->
-        <a-entity geometry="primitive: cylinder" scale=".16 .16 .16" rotation="90 0 0" position="0 0 .08" material="color:#EBBD34"
-          animation="property: position; from: 0 0 0; to: 0 0 .1; loop: false; dur: 5000"></a-entity>
+        <a-entity geometry="primitive: cylinder" scale=".16 .16 .16" rotation="90 0 0" position="0 0 0" 
+          material="color:#EBBD34" animation="property: position; from: 0 0 0; to: 0 0 .1; loop: false; dur: 5000">
+        </a-entity>
         <a-entity geometry="primitive: cylinder"  scale=".14 .14 .14" rotation="90 0 0" position="-.3 0 .05" material="color:#545452"
           animation="property: position; from: 0 0 0; to: -.3 0 .05; loop: false; dur: 5000"></a-entity>
         <a-entity geometry="primitive: cylinder"  scale=".14 .14 .14" rotation="90 0 0" position=".3 0 .05" material="color:#545452"
          animation="property: position; from: 0 0 0; to: .3 0 .05; loop: false; dur: 5000"></a-entity>
 
         <!-- Spheres -->
-        <a-entity geometry="primitive: sphere"  scale=".1 .1 .1" rotation="0 0 0" position="0 0 .4" material="color:#E0E0DA"
-          animation="property: position; from: 0 0 0; to: 0 0 .4; loop: false; dur: 5000"></a-entity>
-        <a-entity geometry="primitive: sphere"  scale=".09 .09 .09" rotation="0 0 0" position=".3 0 .25" material="color:#E0E0DA"
-          animation="property: position; from: 0 0 0; to: .3 0 .25; loop: false; dur: 5000"></a-entity>
+        <a-entity geometry="primitive: sphere"  scale=".1 .1 .1" rotation="0 0 0" position="0 0 .4"       material="color:#E0E0DA"
+          animation="property: position; from: 0 0 0; to: 0 0 .4; loop: false; dur: 5000">
+          <a-text id="CenterText" value="Instagram" align="center"
+          color="#FFF" visible="true" position="0 -1 0" rotation="90 0 0"
+          geometry="primitive: plane; width: 1.75" material="color: #333"></a-text>
+        </a-entity>
+        <a-entity geometry="primitive: sphere"  scale=".09 .09 .09" rotation="0 0 0" position=".3 0 .25"    material="color:#E0E0DA"
+          animation="property: position; from: 0 0 0; to: .3 0 .25; loop: false; dur: 5000">
+          <a-text id="RightText" value="LinkedIn" align="center"
+            color="#FFF" visible="true" position="0 -1 0" rotation="90 0 0"
+            geometry="primitive: plane; width: 1.75" material="color: #333"></a-text></a-entity>
         <a-entity geometry="primitive: sphere"  scale=".09 .09 .09" rotation="0 0 0" position="-.3 0 .25" material="color:#E0E0DA"
-          animation="property: position; from: 0 0 0; to: -.3 0 .25; loop: false; dur: 5000"></a-entity>
+          animation="property: position; from: 0 0 0; to: -.3 0 .25; loop: false; dur: 5000">
+          <a-text id="LeftText" value="GitHub" align="center"
+            color="#FFF" visible="true" position="0 -1 0" rotation="90 0 0"
+            geometry="primitive: plane; width: 1.75" material="color: #333"></a-text></a-entity>
 
-      <!-- code block for gLtf model if needed later.-->
-       <!-- <a-gltf-model rotation="0 0 0 " position="0 .5 0" scale="1 1 1" src="#avatarModel" animation="property: position; to: 0 0 0.1; dur: 3000; easing: easeInOutQuad; loop: true; dir: alternate"> -->
-          
       </a-entity>
     </a-scene>
+
+    <!-- code block for gLtf model if needed later.-->
+     <!-- <a-gltf-model rotation="0 0 0 " position="0 .5 0" scale="1 1 1" src="#avatarModel" animation="property: position; to: 0 0 0.1; dur: 3000; easing: easeInOutQuad; loop: true; dir: alternate"> </a-entity>-->
   </body>
 </html>
