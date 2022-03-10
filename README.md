@@ -1,10 +1,6 @@
 # WEBXR Business Card
 
-(BusinessCard_UI.PNG)
-
-<img src=“./Assets/card.png” raw=true alt=“Hero” style=“margin-right: 10px;”/>
-
-![Alt text](BusinessCard_UI.PNG?raw=true "Title")
+![Alt text](BusinessCard_UI.PNG?raw=true "Hero Image")
 
 ## HOW TO USE
 1. Download the target image to a hand held smart device (phone, tablet), or print the graphic onto a piece of paper in standard business card dimensions. You can download the target image [HERE](./Assets/card.JPG).
@@ -12,6 +8,11 @@
 3. Use the devices camera to find the target image.
 4. Using a mouse or finger touches, explore the 3D UI (Play Video, click to external links) the camera must keep the target image in frame to display the 3D UI.
 
+## ABOUT THE PROJECT
+This WebXR business card was built as a light weight alternative to linking peers and industry professionals to a static portfolio.  The Project utilizes image detection to launch a 3D user interface which in and of itself showcases XR development skills.  The UI anchors to a target image (business card) and allows users to experience my work in a world space, watch a short video of the work I've completed this year, and navigate to my external social media profiles. 
+
+## THE GOAL
+Many people will have their first experience with XR technologies today.  It is my goal to continue innovating and creating works that anyone with a smart device can easily access and engage with without needing access to a headset or application download. I believe this is the future of XR, marketing, and digital experience. 
 ## BUILT WITH
 My Augmented Reality Business Card was built with 
 - [MindAR](https://hiukim.github.io/mind-ar-js-doc/)
