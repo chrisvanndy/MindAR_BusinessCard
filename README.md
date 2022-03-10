@@ -1,4 +1,6 @@
-![Screenshot of WebXR experience. This image showcases image detection and 3D UI design using MindAR and AFrame.]
+# WEBXR Business Card
+
+[Project Image]
 (https://github.com/chrisvanndy/MindAR_BusinessCard/blob/master/Assets/BusinessCard_UI.PNG)
 
 ## HOW TO USE
@@ -13,7 +15,7 @@ My Augmented Reality Business Card was built with
 - [AFrame](https://aframe.io/)
 
 ## ABOUT THE DEVELOPER
-Chris VanDenhende is an junior XR Experience Designer and AR/VR software developer in training, and will graduate from Holberton School Tulsa in summer 2022.  Currently pushing boundaries at the intersections of art, entertainment, marketing, and technology; VanDenhende aims to find a role where his creative innovation and technology skills are put to the test, and create opportunities for the publics to engage with AR/VR technology.
+Chris VanDenhende is an XR Experience Designer and AR/VR software developer in training at Holberton School, Tulsa. He will graduate with a Diploma in AR/VR Software Development in summer 2022.  You will find Chris pushing boundaries at the intersections of art, entertainment, marketing, and technology; VanDenhende aims to find a role where his creative innovation and technology skills are put to the test, creating opportunities for the public to engage with AR/VR technology in new and exciting ways.
 
 - [LinkedIn](https://www.linkedin.com/in/chrisvanndy/)
 - [Spark AR Portfolio](https://www.facebook.com/sparkarhub/portfolios/fb/chris.vandenhende.1/)
