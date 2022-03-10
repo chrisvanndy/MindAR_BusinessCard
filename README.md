@@ -1,10 +1,7 @@
 # WEBXR Business Card
 
-[Project Image]
-(https://github.com/chrisvanndy/MindAR_BusinessCard/blob/master/Assets/BusinessCard_UI.PNG)
-
 <img
-src=“Assets/BusinessCard_UI.PNG”
+src=“BusinessCard_UI.PNG”
 raw=true
 alt=“Subject Hero”
 style=“margin-right: 10px;”
