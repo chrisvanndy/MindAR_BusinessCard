@@ -3,6 +3,13 @@
 [Project Image]
 (https://github.com/chrisvanndy/MindAR_BusinessCard/blob/master/Assets/BusinessCard_UI.PNG)
 
+<img
+src=“Assets/BusinessCard_UI.PNG”
+raw=true
+alt=“Subject Hero”
+style=“margin-right: 10px;”
+/>
+
 ## HOW TO USE
 1. Download the target image to a hand held smart device (phone, tablet), or print the graphic onto a piece of paper in standard business card dimensions. You can download the target image [HERE](./Assets/card.JPG).
 2. Scan the QR code on the target image graphic to launch the application via a secondary device with a camera (phone, tablet), or launch the application on a computer via the link [HERE](https://chrisvanndy.github.io/MindAR_BusinessCard/)
