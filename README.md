@@ -1,5 +1,5 @@
 ![Screenshot of WebXR experience. This image showcases image detection and 3D UI design using MindAR and AFrame.]
-(Assets/BusinessCard_UI.PNG)
+(https://github.com/chrisvanndy/MindAR_BusinessCard/blob/master/Assets/BusinessCard_UI.PNG)
 
 ## HOW TO USE
 1. Download the target image to a hand held smart device (phone, tablet), or print the graphic onto a piece of paper in standard business card dimensions. You can download the target image [HERE](./Assets/card.JPG).
