@@ -2,12 +2,9 @@
 
 (BusinessCard_UI.PNG)
 
-<img
-src=“BusinessCard_UI.PNG”
-raw=true
-alt=“Subject Hero”
-style=“margin-right: 10px;”
-/>
+<img src=“./Assets/card.png” raw=true alt=“Hero” style=“margin-right: 10px;”/>
+
+![Alt text](BusinessCard_UI.PNG?raw=true "Title")
 
 ## HOW TO USE
 1. Download the target image to a hand held smart device (phone, tablet), or print the graphic onto a piece of paper in standard business card dimensions. You can download the target image [HERE](./Assets/card.JPG).
