@@ -1,6 +1,6 @@
 # WEBXR Business Card
 
-![Alt text](BusinessCard_UI.PNG?raw=true "Hero Image")
+![Project Hero Image](BusinessCard_UI.PNG?raw=true "Hero Image")
 
 ## HOW TO USE
 1. Download the target image to a hand held smart device (phone, tablet), or print the graphic onto a piece of paper in standard business card dimensions. You can download the target image [HERE](./Assets/card.JPG).
