@@ -17,6 +17,7 @@ Many people will have their first experience with XR technologies today.  It is 
 My Augmented Reality Business Card was built with 
 - [MindAR](https://hiukim.github.io/mind-ar-js-doc/)
 - [AFrame](https://aframe.io/)
+- [Javascript](https://www.javascript.com/)
 
 ## ABOUT THE DEVELOPER
 Chris VanDenhende is an XR Experience Designer and AR/VR software developer in training at Holberton School, Tulsa. He will graduate with a Diploma in AR/VR Software Development in summer 2022.  You will find Chris pushing boundaries at the intersections of art, entertainment, marketing, and technology; VanDenhende aims to find a role where his creative innovation and technology skills are put to the test, creating opportunities for the public to engage with AR/VR experiences in new and exciting ways.
