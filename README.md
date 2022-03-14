@@ -3,7 +3,7 @@
 ![Project Hero Image](BusinessCard_UI.PNG?raw=true "Hero Image")
 
 ## HOW TO USE
-1. Download the target image to a hand held smart device (phone, tablet), or print the graphic onto a piece of paper in standard business card dimensions. You can download the target image [HERE](./Assets/card.JPG).
+1. Download the target image to a hand held smart device (phone, tablet), or print the graphic onto a piece of paper in standard business card dimensions. You can download the target image [HERE](https://github.com/chrisvanndy/MindAR_BusinessCard/blob/master/Assets/card.JPG).
 2. Scan the QR code on the target image graphic to launch the application via a secondary device with a camera (phone, tablet), or launch the application on a computer via the link [HERE](https://chrisvanndy.github.io/MindAR_BusinessCard/)
 3. Use the devices camera to find the target image.
 4. Using a mouse or finger touches, explore the 3D UI (Play Video, click to external links) the camera must keep the target image in frame to display the 3D UI.
